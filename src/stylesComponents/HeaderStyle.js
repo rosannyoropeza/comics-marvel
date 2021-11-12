@@ -54,3 +54,31 @@ export const MenuButtonWrapper = styled.button`
         }
     }
 `;
+
+export const BoxUser = styled.div`
+    display: flex;
+    align-items: center;
+
+    span {
+        color: ${colorWhite};
+        padding: 0rem 1rem;
+
+        a {
+            color: ${colorWhite};
+        }
+    }
+`;
+
+export const wraperUser = styled.img`
+    margin: 0 rem 1 rem;
+    background: ${colorWhite};
+    border-radius: 100%;
+    width: 51px;
+    height: 51px;
+
+    img {
+        border-radius: 100% !important;
+        width: 100% !important;
+        height: 100%;
+    }
+`;
