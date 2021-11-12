@@ -1,28 +1,31 @@
 import React from "react";
-import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
+// import { BrowserRouter as Router, Switch, Route, Redirect, HashRouter } from "react-router-dom";
+import { Switch, Route, Redirect, HashRouter } from "react-router-dom";
 import Home from "../components/Home";
-import Login from "../components/Login";
-import Registrate from "../components/Registrate";
+import Comics from "../components/Comics";
+import Form from "../components/Form";
 
-function Routes() {
+function Routes(props) {
   return (
-    <Router>
+    <HashRouter>
       <Switch>
-
         <Route path="/Registrate" exact={true}>
-          <Registrate/>
+        {props.userGlobal ? <Redirect to="/Login"/> : <Form isRegister={true} />}
+        </Route>
+
+        <Route path="/Comics" exact={true}>
+          {props.userGlobal ? <Comics/> : <Redirect to="/" />}
         </Route>
 
         <Route path="/Login" exact={true}>
-          <Login/>
+          {props.userGlobal ? <Redirect to="/Comics"/> : <Form isRegister={false}/>}
         </Route>
 
         <Route path="/" exact={true}>
-          <Home/>
+          {props.userGlobal ? < Comics/> : <Home />}
         </Route>
-
       </Switch>
-    </Router>
+    </HashRouter>
   );
 }
 

@@ -22,10 +22,10 @@ export const WrapperMain = styled.div`
 `;
 
 export const Wrapper = styled.div`
-  margin: auto;
-  width: 80vw;
-  padding: 4rem 0rem;
+  // margin: auto;
+  // width: 80vw;
+  // padding: 4rem 0rem;
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: repeat(5, 1fr);
   grid-gap: 0.4vh;
 `;
