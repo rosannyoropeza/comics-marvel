@@ -1,70 +1,85 @@
-# Getting Started with Create React App
+# Comics de Marvel
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Índice
 
-## Available Scripts
+* [1. Contexto](#1-contexto)
+* [2. Proceso de diseño](#2-Proceso-de-diseño)
+* [3. Mejoras del producto](#3-Mejoras-del-producto)
+* [4. Instalación y configuración del proyecto](#4-Instalación-y-configuración-del-proyecto)
+* [5. Patrón de arquitectura empleado en el desarrollo.](#5-patrón-de-arquitectura-empleado-en-el-desarrollo.)
 
-In the project directory, you can run:
+## 1. Contexto 
 
-### `yarn start`
+**Comics de Marvel** es una aplicación web donde podrás ver toda la información sobre los cómics que a la largo de su historia **Marvel** ha publicado.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+## 2.Proceso de diseño
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+Prototipo de alta para dispositivo desktop página inicial
+<p align = "center"> <img src= "https://github.com/rosannyoropeza/comics-marvel/src/assets/imagesFigma/Home.png"></p>
 
-### `yarn test`
+Prototipo de alta para dispositivo desktop login
+<p align = "center"> <img src= "https://github.com/rosannyoropeza/comics-marvel/src/assets/imagesFigma/Login.png"></p>
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+Prototipo de alta para dispositivo desktop Registrarse
+<p align = "center"> <img src= "https://github.com/rosannyoropeza/comics-marvel/src/assets/imagesFigma/Registrarse.png"></p>
 
-### `yarn build`
+Prototipo de alta para dispositivo desktop Comics
+<p align = "center"> <img src= "https://github.com/rosannyoropeza/comics-marvel/src/assets/imagesFigma/Comics.png"></p>
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+Prototipo de alta para dispositivo desktop Comics - Modal
+<p align = "center"> <img src= "https://github.com/rosannyoropeza/comics-marvel/src/assets/imagesFigma/Comics-modal.png"></p>
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+Prototipo de alta para dispositivo desktop Comics - perfil
+<p align = "center"> <img src= "https://github.com/rosannyoropeza/comics-marvel/src/assets/imagesFigma/Comics-perfil.png"></p>
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+[Enlace prototipo Figma](https://www.figma.com/file/s8zBnuAtmWJwI457Z7wqDs/PERSONAJES-DE-MARVEL?node-id=13%3A188)
 
-### `yarn eject`
+## 3.Mejoras del producto
+ 
+* Como pendiente quedaría crear la vista con la información del perfil de cada usuario.
+* Agregar en los cómics favoritos una opción para eliminar las tarjetas.
+* Agregar una función para ordenar los cómics de la A-Z y de la Z-A.
+* Crear la opción de ver los personajes de Marvel.
+## 4.Instalación y configuración del proyecto
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+1. <a href="https://nodejs.org/es/download/current/">Instalar  Node.js versión v13.11.0</a>
+2. Abrir  la consola.
+3. Realiza un  ***fork*** del repositorio ***https://github.com/rosannyoropeza/comics-marvel*** desde GitHub.
+4. Ejecutar en la consola los siguientes comandos:
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+Para clonar el repositorio
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+```sh
+git clone https://github.com/rosannyoropeza/comics-marvel.git
+```
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+Para abrir la carpeta donde se guardó el proyecto
 
-## Learn More
+```sh
+cd comics-marvel
+```
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+Instale los módulos del proyecto.
+```sh
+npm install
+```
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+Inicie el servidor web
 
-### Code Splitting
+```sh
+npm start
+```
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+5. Dirígete a http://localhost:3000 en tu navegador, para ver la interfaz del programa en el navegador. 
 
-### Analyzing the Bundle Size
+## 5.Patrón de arquitectura empleado en el desarrollo.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+El patrón empleado fue el de capas ya que consta de:
+ 
+*  Una capa de presentación, conformada por los componentes de React.
+*  Una capa de aplicación, que sería la aplicación de la API de Marvel.
+*  Y una capa de datos, que permitió el acceso a los datos guardados en Firebase para persistir a los favoritos del usuario mediante Firestore Database y la administración de los usuarios de la aplicación a través de Authentication de Firebase.
 
-### Making a Progressive Web App
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
 
-### Advanced Configuration
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `yarn build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
