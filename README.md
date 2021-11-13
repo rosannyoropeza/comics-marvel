@@ -12,7 +12,7 @@
 
 **Comics de Marvel** es una aplicación web donde podrás ver toda la información sobre los cómics que a la largo de su historia **Marvel** ha publicado.
 
-## 2.Proceso de diseño
+## 2. Proceso de diseño
 
 Prototipo de alta para dispositivo desktop página inicial
 <p align = "center"> <img src= "https://github.com/rosannyoropeza/comics-marvel/src/assets/imagesFigma/Home.png"></p>
@@ -34,7 +34,7 @@ Prototipo de alta para dispositivo desktop Comics - perfil
 
 [Enlace prototipo Figma](https://www.figma.com/file/s8zBnuAtmWJwI457Z7wqDs/PERSONAJES-DE-MARVEL?node-id=13%3A188)
 
-## 3.Mejoras del producto
+## 3. Mejoras del producto
  
 * Como pendiente quedaría crear la vista con la información del perfil de cada usuario.
 * Agregar en los cómics favoritos una opción para eliminar las tarjetas.
@@ -72,7 +72,7 @@ npm start
 
 5. Dirígete a http://localhost:3000 en tu navegador, para ver la interfaz del programa en el navegador. 
 
-## 5.Patrón de arquitectura empleado en el desarrollo.
+## 5. Patrón de arquitectura empleado en el desarrollo.
 
 El patrón empleado fue el de capas ya que consta de:
  
